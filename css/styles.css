@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: odin;
+    src: url(../webfontkit/fonts/norse-bold-webfont.woff);
+    src: url(../webfontkit/fonts/norse-bold-webfont.woff2);
+}
+
+.bg-image {
+    height: 100vh;
+    width: 35vw;
+    background: url(../img/background.jpg) no-repeat center; 
+    background-size: cover;
+    position: relative;
+}
+
+.logo-wrapper {
+    background: rgb(0 0 0 / 40%);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 200px;
+}
+
+.logo-wrapper img {
+    height: 130px;
+}
+
+.bg-text {
+    font-family: odin;
+    color: white;
+    font-size: 100px;
+}
+
+.body-content {
+    width: 65vw;
+}
+
