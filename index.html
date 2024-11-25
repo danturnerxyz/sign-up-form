@@ -7,67 +7,83 @@
         <link rel="stylesheet" href="./css/styles.css" type="text/css">
     </head>
     <body>
-        <div class="bg-image">
-            <div class="logo-wrapper">
-                <img src="./img/odin-lined.png" alt="">
-                <p class="bg-text">Odin</p>
-            </div>
-        </div>
-        <div class="body-content">
-            <section class="sign-up-text">
-                <p>
-                    This is not a real online service! You know you need something
-                    like this in your life to help you realise your deepest dreams.
-                    Sign up <span class="ital">now</span> to get started.
-
-                    You <span class="ital">know</span> you want to
+        <div class="container">
+            <div class="bg-image">
+                <div class="logo-wrapper">
+                    <img src="./img/odin-lined.png" alt="">
+                    <p class="bg-text">Odin</p>
+                </div>
+                <p class="photo-attribute">
+                    Photo by <a href="https://unsplash.com/@aarsoph?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                    Kristijan Arsov</a>
+                    on <a href="https://unsplash.com/photos/closeup-photo-of-brown-wooden-statue-tcw3nwoAgvs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                    Unsplash</a>
                 </p>
-            </section>
-            <section class="form-section">
-                <h2>Let's do this!</h2>
-                <form action="" method="">
-                    <p>
-                        <label for="first-name">
-                            <span>First name</span>
-                        </label>
-                        <input type="text" id="first-name" name="user_first_name">
-                    </p>
-                    <p>
-                        <label for="last-name">
-                            <span>Last name</span>
-                        </label>
-                        <input type="text" id="last-name" name="user_last_name">
-                    </p>
-                    <p>
-                        <label for="email">
-                            <span>Email</span>
-                        </label>
-                        <input type="text" id="email" name="user_email">
-                    </p>
-                    <p>
-                        <label for="phone-number">
-                            <span>Phone number</span>
-                        </label>
-                        <input type="tel" id="phone-number" name="user_phone_num">
-                    </p>
-                    <p>
-                        <label for="password">
-                            <span>Password</span>
-                        </label>
-                        <input type="password" id="password" name="user_pass">
-                    </p>
-                    <p>
-                        <label for="confirm-pass">
-                            <span>Confirm password</span>
-                        </label>
-                        <input type="password" id="confirm-pass" name="confirm_pass">
-                    </p>
-                    <button type="submit">
-                        <span>Create Account</span>
-                    </button>
-                </form>
-                <p>Already have an account? <a href="#">Log in</a></p>
-            </section>
+            </div>
+            <main class="main-content">
+                <section class="sign-up">
+                    <div class="wrapper">
+                        <p class="sign-up-text">
+                            This is not a real online service! You know you need something
+                            like this in your life to help you realise your deepest dreams.
+                            Sign up <span class="ital">now</span> to get started.
+                        </p>
+                        <p>
+                            You <span class="ital">know</span> you want to.
+                        </p>
+                    </div>
+                </section>
+                <section class="form">
+                    <div class="wrapper">
+                        <h2>Let's do this!</h2>
+                        <form action="" method="">
+                            <p>
+                                <label for="first-name">
+                                    <span>First name</span>
+                                </label>
+                                <input type="text" id="first-name" name="user_first_name">
+                            </p>
+                            <p>
+                                <label for="last-name">
+                                    <span>Last name</span>
+                                </label>
+                                <input type="text" id="last-name" name="user_last_name">
+                            </p>
+                            <p>
+                                <label for="email">
+                                    <span>Email</span>
+                                </label>
+                                <input type="text" id="email" name="user_email">
+                            </p>
+                            <p>
+                                <label for="phone-number">
+                                    <span>Phone number</span>
+                                </label>
+                                <input type="tel" id="phone-number" name="user_phone_num">
+                            </p>
+                            <p>
+                                <label for="password">
+                                    <span>Password</span>
+                                </label>
+                                <input type="password" id="password" name="user_pass">
+                            </p>
+                            <p>
+                                <label for="confirm-pass">
+                                    <span>Confirm password</span>
+                                </label>
+                                <input type="password" id="confirm-pass" name="confirm_pass">
+                            </p>
+
+                            <div class="btn">
+                                <button type="submit">
+                                    <span>Create Account</span>
+                                </button>
+                                <p>Already have an account? <a href="#">Log in</a></p>
+                            </div> 
+                        </form>
+                    </div>
+                </section>
+            </main>
         </div>
 
     </body>
