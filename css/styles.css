@@ -130,9 +130,43 @@ form label {
 }
 
 input {
+    font-size: 1rem;
     display: block;
     width: 100%;
-    height: 30px;
+    height: 20px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+}
+
+input:valid {
+    background-color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    background-color: white !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 5px 5px 5px rgb(88, 88, 88, 20%)
+}
+
+input:invalid::after {
+    content: "Invalid password";
+    color: red;
+    display: block;
+    margin-top: 5px;
+}
+
+input:focus{
+    outline: 1px solid blue;
+    box-shadow: 5px 5px 5px rgb(88, 88, 88, 20%)
+}
+
+input:invalid + .error-message {
+    display: block;
+    color: red;
+    font-size: .8rem;
 }
 
 button {

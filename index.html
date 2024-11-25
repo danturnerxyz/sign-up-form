@@ -41,7 +41,7 @@
                                 <label for="first-name">
                                     <span>First name</span>
                                 </label>
-                                <input type="text" id="first-name" name="user_first_name">
+                                <input type="text" id="first-name" name="user_first_name" required>
                             </p>
                             <p>
                                 <label for="last-name">
@@ -53,7 +53,7 @@
                                 <label for="email">
                                     <span>Email</span>
                                 </label>
-                                <input type="text" id="email" name="user_email">
+                                <input type="email" id="email" name="user_email" required>
                             </p>
                             <p>
                                 <label for="phone-number">
@@ -65,13 +65,24 @@
                                 <label for="password">
                                     <span>Password</span>
                                 </label>
-                                <input type="password" id="password" name="user_pass">
+                                <input type="password"
+                                id="password"
+                                name="user_pass"
+                                minlength = "8"
+                                required>
+                                <span class="error-message">*Passwords do not match</span>
                             </p>
+                            
                             <p>
                                 <label for="confirm-pass">
                                     <span>Confirm password</span>
                                 </label>
-                                <input type="password" id="confirm-pass" name="confirm_pass">
+                                <input type="password"
+                                id="password"
+                                name="user_pass"
+                                minlength = "8"
+                                required>
+                                <span class="error-message">*Passwords do not match</span>
                             </p>
 
                             <div class="btn">
